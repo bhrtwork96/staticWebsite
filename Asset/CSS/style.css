@@ -1,0 +1,49 @@
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+h1{
+    color: blue;
+    text-align: center;
+}
+
+p{
+    
+    text-align: center;
+    font-size: larger;
+    width: 50%;
+}
+
+img{
+    width: 50%;
+    height: 400px;
+}
+
+button{
+    margin-top: 25px;
+    color: white;
+    background-color: green;
+    font-size: medium;
+    padding:10px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color:blue;
+    cursor: pointer;
+}
+
+div{
+    margin-top: 25px;
+    text-align: center;
+    background-color: aquamarine;
+    color:rgb(3, 20, 82);
+    font-size:20px;
+    width: 50%;
+    padding: 5px;
+    border: blueviolet solid 2px;
+    border-radius: 5px;
+}
+
+
