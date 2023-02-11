@@ -5,25 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <meta name="description"
+        content="EMI Calculator - Calculate Equated Monthly Installment (EMI) for Home Loan / Housing Loan, Car Loan &amp; Personal Loan in India">
+    <meta name="keywords"
+        content="emi calculator,emi rate, home loan emi calculator,car loan emi calculator,personal loan emi calculator,loan emi calculator,emi calculator online">
+    <title>EMI Calculator for Home Loan, Car Loan &amp; Personal Loan in India</title>
     <link rel="stylesheet" href="Asset/CSS/style.css">
 
 </head>
 
 <body>
-    <h1 class="center">Welcome to my website</h1>
-    <p class="center" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste praesentium obcaecati ipsam molestiae eveniet ad
-        rerum, laudantium fuga nobis tempora, exercitationem nisi voluptatum accusantium ut ex.</p>
-    <img class="center" src="/Asset/Images/Img1.png" alt="">
+    <h1 class="center">EMI Calculator</h1>
+    <div class="center calculator">
+        <div class="center">
+            <label for="Loan Amount">Loan Amount</label>
+            <input type="number" name="loanAmount" id="loanAmount" value="50000">
+        </div>
+     
+        <div class="center">
+            <label for="Loan Amount">Tenure(Years)</label>
+            <input type="number" name="tenure" id="tenure" value="5">
+        </div>
 
-    <div class="center" id="msg">
+        <div class="center">
+            <label for="Loan Amount">Interest Rate (% P.A.)</label>
+            <input type="number" name="rate" id="rate" value = "9.8">
+        </div>
+       
+        <button class="center" onclick="solution()">Calculate EMI</button>
+       
+    </div>
+    <div id="emi">
+        
     </div>
 
-    <button class="center" onclick="action()">Change Name</button>
-
-    <a href="/about.html">About</a>
-
-    <script src="Asset/JS/script.js"></script>
+    <table id="result" class="result" style="visibility: hidden;">
+        <tr >
+            <th>
+                Month
+            </th>
+            <th>
+                Outstanding Principle
+            </th>
+            <th>
+                Interest
+            </th>
+            <th>
+                Repayment
+            </th>
+            <th>
+                EMI
+            </th>
+        </tr>
+    </table>
+    <script defer src="Asset/JS/script.js"></script>
+    <script defer src="Asset/JS/jquery.js"></script>
 </body>
 
 </html>

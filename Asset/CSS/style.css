@@ -1,49 +1,82 @@
-.center{
+.center {
     display: block;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
 }
-h1{
+
+h1 {
     color: blue;
     text-align: center;
 }
 
-p{
-    
+p {
+
     text-align: center;
     font-size: larger;
     width: 50%;
 }
 
-img{
+img {
     width: 50%;
     height: 400px;
 }
 
-button{
+button {
     margin-top: 25px;
     color: white;
     background-color: green;
     font-size: medium;
-    padding:10px;
+    padding: 10px;
     border-radius: 10px;
 }
 
-button:hover{
-    background-color:blue;
+button:hover {
+    background-color: blue;
     cursor: pointer;
 }
 
-div{
-    margin-top: 25px;
-    text-align: center;
-    background-color: aquamarine;
-    color:rgb(3, 20, 82);
-    font-size:20px;
-    width: 50%;
-    padding: 5px;
-    border: blueviolet solid 2px;
-    border-radius: 5px;
+.calculator {
+    display: flex;
+    flex-direction: column;
 }
 
+.calculator>div>label {
+    font-size: 25px;
+}
 
+.calculator>div>input {
+    background-color: #d8f2e8;
+    border: 0;
+    margin-left: 50px;
+    font-size: 25px;
+
+}
+
+.calculator>div>input:hover {
+    background-color: #90f0cb;
+}
+
+.calculator>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.result {
+    width: 30%;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result
+th,
+td {
+    color: black;
+    border: 2px solid black;
+    padding: 2px;
+    
+}
