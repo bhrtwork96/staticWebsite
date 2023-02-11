@@ -105,11 +105,11 @@ td {
 
 @media (max-width: 579px) {
     .calculator>div>label {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .calculator>div>input {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .calculator>div {
