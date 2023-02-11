@@ -16,10 +16,7 @@ p {
     width: 50%;
 }
 
-img {
-    width: 50%;
-    height: 400px;
-}
+
 
 button {
     margin-top: 25px;
@@ -72,11 +69,61 @@ button:hover {
     margin-right: auto;
 }
 
-.result
-th,
+.result th,
 td {
     color: black;
     border: 2px solid black;
     padding: 2px;
+
+}
+
+@media (max-width: 1098px) {
+    .calculator>div>label {
+        font-size: 20px;
+    }
+
+    .calculator>div>input {
+        font-size: 20px;
+    }
+
+    .calculator>div {
+        width: 80%;
+    }
+
+    #emi {
+        font-size: 10px;
+    }
+
+    .result {
+        width: 80%;
+        font-size: 10px;
+    }
+
     
+
+}
+
+@media (max-width: 579px) {
+    .calculator>div>label {
+        font-size: 10px;
+    }
+
+    .calculator>div>input {
+        font-size: 10px;
+    }
+
+    .calculator>div {
+        width: 95%;
+    }
+
+    #emi {
+        font-size: 10px;
+    }
+
+    .result {
+        width: 100%;
+        font-size: 10px;
+
+    }
+
 }

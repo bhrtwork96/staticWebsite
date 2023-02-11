@@ -21,7 +21,7 @@ const solution = ()=>{
         entry.Interst = entry.Outstanding*R;
         entry.Repayment = EMI-entry.Interst;
         entry.EMI = EMI;
-        Principle = entry.Outstanding-entry.Interst;
+        Principle = entry.Outstanding-entry.Repayment;
         result.push(entry)
     }
     $(document).ready(function(){
