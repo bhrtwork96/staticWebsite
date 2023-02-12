@@ -11,7 +11,7 @@ const solution = ()=>{
 
     let EMI = P * R * Math.pow((1+R),n)/(Math.pow((1+R),n)-1);
 
-    console.log(EMI.toFixed(2))
+    
      let Principle = P;
     
     for(let i=1; i<=n; i++){
@@ -24,6 +24,13 @@ const solution = ()=>{
         Principle = entry.Outstanding-entry.Repayment;
         result.push(entry)
     }
+    console.log(result)
+    let totalInterst = result.reduce(function(p,c){
+        return (p + c.Interst)
+    },0)
+    
+    let totalAmount = EMI*n;
+    console.log(totalAmount)
     $(document).ready(function(){
         $('#result').html(`<tr >
         <th>
@@ -43,7 +50,9 @@ const solution = ()=>{
         </th>
     </tr>`);
         $('#result').css('visibility','visible')
-        $('#emi').html(`<h1>Monthly EMI Rs.  ${Math.round(EMI)}/Month</h1>`);
+        $('#emi').html(`<h1>Monthly EMI Rs.  ${Math.round(EMI)}/Month</h1> <br> 
+                        <h1>Total Interest Rs. ${Math.round(totalInterst)}<br>
+                        <h1>Total Amount Rs. ${Math.round(totalAmount)}`);
 
        result.forEach((e)=>{
          $('#result').append(`<tr>
